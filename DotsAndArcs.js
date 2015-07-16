@@ -28,8 +28,7 @@ if (Meteor.isClient) {
       var text = event.target.text.value;
       Tasks.insert({
         text: text,
-        createdAt: new Date(),            // current time
-        owner: Meteor.userId(),           // _id of logged in user
+              owner: Meteor.userId(),           // _id of logged in user
         username: Meteor.user().username  // username of logged in user
   });   
 
